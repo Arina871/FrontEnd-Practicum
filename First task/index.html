@@ -7,12 +7,13 @@
 </head>
 <body>
     <div class="table0">
-        <img src="image1.png" style="height: 1em; margin-top: 1.5em;">
-        <li>tghjhgfd</li>
-        <li>tghjgh</li>
-        <li>tghjgh</li>
-        <li>tghjgh</li>
-        <li>tghjgh</li>
+        <img src="image1.png" style="height: 1em;">
+        <a href="#">Гражданам</a>
+        <a href="#">Услуги</a>
+        <a href="#">Документы</a>
+        <a href="#">Заявления</a>
+        <a href="#">Платежи</a>
+        <a href="#">Помощь</a>
     </div>
     
     <div class="header">
@@ -21,17 +22,16 @@
                 <img src="https://gu-st.ru/content/lending/Illyustraciya_dolgosrochnye_sberezheniya.svg" alt="">
                 
             </div>
-        <h1>Программа долгосрочных сбережений</h1>
-        Узнайте, как стать участником программы и копить средства в том числе с помощью государства
+
+            <h1>Программа долгосрочных сбережений</h1>
         </div>
     </div>
     <div class="main">
         <div class="mid">
             <h1>Что такое программа долгосрочных сбережений</h1>
+            <div class="table1"></div>           
         </div>    
-        <div class="table1">
-
-        </div>
+        
         <div class="grid-container"> 
             <div class="green grid-item">
                 <h2>Из чего формируются сбережения</h2>
@@ -40,7 +40,6 @@
                 <li>Из средств софинансирования государством</li>
                 <li>Из пенсионных накоплений гражданина</li>
             </div>
-            <div class="grid-item"></div>
             <div class="red grid-item">
                 <h2>Когда производятся выплаты</h2>
                 <li>По истечении 15 лет с даты заключения договора</li>
@@ -53,14 +52,29 @@
 </html>
 
 <style>
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
 .table0 {
     display: grid;
     text-align: center;
     grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    height: 2em;
+    height: 1.5em;
     padding: 1em; 
     border: solid 3px #262fe0;
     border-radius: 1em;
+    text-decoration: none;
+}
+
+.poster {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    justify-content: right;
 }
 
 .main {
@@ -69,10 +83,7 @@
 }
 
 .header-img {    
-    margin: 2em;
-    padding-top: 2em;
-    height: 14em;
-    margin-right: 10em;
+    height: fit-content;
     text-align: right;
 }
 
@@ -89,21 +100,28 @@
 }
 
 .grid-item {
-    display:grid;
-    grid-template-columns: 2fr 1fr 2fr;
-    height: 15em; 
+    display:flex;
+    flex-direction: column;
+    grid-template-columns: 2fr 2fr;
+    height: 10em; 
     border-radius: 1em;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .header {
     width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
     background-image: linear-gradient(45deg, #e0bfffd4, #fed9ebd7)
 }
 
 .grid-container {
     display: grid;
     text-align: center;
-    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-columns: 2fr 2fr;
     height: 15em;
     padding: 1em; 
     border: solid 3px #ffffff;
