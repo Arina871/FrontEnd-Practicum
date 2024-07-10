@@ -1,0 +1,48 @@
+h1 {
+    font-size: 40px;
+}
+a:hover {
+    color: rgb(227, 111, 28);
+}
+
+/* Стилизация заголовков */ 
+h1 { 
+    color: rgb(0, 17, 255); 
+    font-size: 50px; 
+    } 
+    h2 { 
+    color: green; 
+    font-size: 20px; 
+    } 
+    h3 { 
+    color: red; 
+    font-size: 18px; 
+    
+    } 
+    /* Стилизация абзацев */ 
+    p { 
+    color: #333; /* Цвет текста в формате HEX */ 
+    font-family: Arial, sans-serif; /* Шрифт */ 
+    line-height: 1.5; /* Межстрочный интервал */ 
+    } 
+    /* Стилизация ссылок */ 
+    a { 
+    text-decoration: none; /* Убрать подчеркивание */ 
+    color: #007bff; /* Цвет ссылки */ 
+    } 
+    /* Стилизация списков */ 
+    ul { 
+    list-style-type: square; /* Маркер списка - квадраты */ 
+    } 
+    ol { 
+    list-style-type: decimal; /* Нумерация списка */ 
+    } 
+    li { 
+    margin-bottom: 5px; /* Отступ между элементами списка */ 
+    }
+    @media screen and (width <600px){
+        h1 {font-size: 1em;}
+    }
+    .aboat{
+        width: 80%;
+    }
